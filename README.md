@@ -60,17 +60,17 @@ Browser LocalStorage – Data persistence
 📁 Project Structure
 Expense-Tracker-main/
 │
-├── index.html        # Home page (Add expenses)
-├── expenses.html     # View all expenses
-├── edit.html         # Edit expense details
-├── summary.html      # Expense summary & analytics
-├── todo.html         # To-do list management
-├── notes.html        # Notes management
-│
-├── style.css         # Application styling
-├── script.js         # Core JavaScript logic
-│
-└── README.md         # Project documentation
+├── index.html        # Home page (Add expenses)<br>
+├── expenses.html     # View all expenses<br>
+├── edit.html         # Edit expense details<br>
+├── summary.html      # Expense summary & analytics<br>
+├── todo.html         # To-do list management<br>
+├── notes.html        # Notes management<br>
+│<br>
+├── style.css         # Application styling<br>
+├── script.js         # Core JavaScript logic<br>
+│<br>
+└── README.md         # Project documentation<br>
 
 ⚙️ How to Run the Project
 
