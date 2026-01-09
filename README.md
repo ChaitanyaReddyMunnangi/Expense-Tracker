@@ -134,6 +134,7 @@ Backend & database integration
 👨‍💻 Author
 
 Chaitanya Reddy Munnangi
+<br>
 Student | Aspiring Software Developer
 
 📜 License
