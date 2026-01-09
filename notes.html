@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-brand">MyExpenseHub</a>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <select id="currencySelector">
+                    <option value="USD">$ USD</option>
+                    <option value="INR">₹ INR</option>
+                    <option value="EUR">€ EUR</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="CAD">C$ CAD</option>
+                    <option value="CNY">¥ CNY</option>
+                </select>
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="expenses.html">Your Expenses</a>
+                    <a href="notes.html" class="active">Notes</a>
+                    <a href="todo.html">To-Do</a>
+                    <a href="summary.html">Summary</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Notes</h1>
+            <p class="subtitle">Keep your personal notes and reminders in one place.</p>
+        </div>
+        
+        <div class="card">
+            <div id="message" class="message"></div>
+            
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <div id="tabsList" class="tabs-list"></div>
+                    <button id="addTabBtn" class="add-tab-btn">+ New Tab</button>
+                </div>
+            </div>
+            
+            <div class="form-group" style="margin-top: 20px;">
+                <label for="notesTextarea">Your Notes</label>
+                <textarea id="notesTextarea" placeholder="Enter your notes here..."></textarea>
+            </div>
+            
+            <button id="saveNotesBtn">Save Notes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

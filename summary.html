@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="index.html" class="navbar-brand">MyExpenseHub</a>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <select id="currencySelector">
+                    <option value="USD">$ USD</option>
+                    <option value="INR">₹ INR</option>
+                    <option value="EUR">€ EUR</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="AUD">A$ AUD</option>
+                    <option value="CAD">C$ CAD</option>
+                    <option value="CNY">¥ CNY</option>
+                </select>
+                <div class="navbar-links">
+                    <a href="index.html">Home</a>
+                    <a href="expenses.html">Your Expenses</a>
+                    <a href="notes.html">Notes</a>
+                    <a href="todo.html">To-Do</a>
+                    <a href="summary.html" class="active">Summary</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Summary</h1>
+            <p class="subtitle">View all your expenses, todos, and notes in one place.</p>
+        </div>
+        
+        <!-- Expenses Section -->
+        <div class="card">
+            <h2 style="margin-bottom: 20px; color: var(--sky-blue-light); font-size: 24px; font-weight: 700;">Expenses</h2>
+            <div id="summaryExpensesList" class="expenses-list"></div>
+            <div id="summaryTotalExpense" class="total-expense"></div>
+        </div>
+
+        <!-- Todos Section -->
+        <div class="card" style="margin-top: 25px;">
+            <h2 style="margin-bottom: 20px; color: var(--sky-blue-light); font-size: 24px; font-weight: 700;">To-Do Tasks</h2>
+            <div id="summaryTodoList" class="todo-list"></div>
+            <div id="summaryCompletedSection" style="margin-top: 30px;">
+                <h3 style="margin-bottom: 15px; color: var(--sky-blue-light); font-size: 20px; font-weight: 600;">Completed Tasks</h3>
+                <div id="summaryCompletedList" class="todo-list"></div>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div class="card" style="margin-top: 25px;">
+            <h2 style="margin-bottom: 20px; color: var(--sky-blue-light); font-size: 24px; font-weight: 700;">Notes</h2>
+            <div id="summaryNotesList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
